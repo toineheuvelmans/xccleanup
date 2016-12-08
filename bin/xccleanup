@@ -1,0 +1,4 @@
+% cat bin/xccleanup
+#!/usr/bin/env ruby
+
+require 'xccleanup'
