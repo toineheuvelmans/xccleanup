@@ -38,6 +38,7 @@ To be added in the (near future):
 * Remove device support for tvOS and watchOS (currenty only iOS is checked).
 * Provide different modes for specifying OS versions to keep.
 * Remove expired or revoked certificates and (non-Apple) certificates without private key. (is that possible, is that wise?)
+* Add a mode / config feature with which the script can run without user input.
 
 ## Contributing
 
