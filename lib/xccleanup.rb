@@ -128,7 +128,7 @@ module Xccleanup
 		saved_bytes = 0
 
 		ds_folder = File.expand_path('~/Library/Developer/Xcode/iOS DeviceSupport/')
-		ds_versions = get_folders_in_dir(ds_folder)
+		ds_versions = get_folders_in_dir(ds_folder).select { |folder| Gem::Version.correct?(folder.split('/').last.split(' ').first) }
 
 		if ds_versions.length > 0
 			puts "Found versions:"
